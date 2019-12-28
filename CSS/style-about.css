@@ -1,0 +1,111 @@
+.menu-header li a[href="/about.html"] {  
+    color: white;
+    border: 1px solid white;
+}
+.band-about {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+.band-text {
+  width: 80%;
+  margin: 0px auto;
+  background: #efefef;
+  padding: 20px;
+  transition-duration: 0.2s;
+}
+.band-text p{
+  font-size: 30px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+.band-text:hover{
+  box-shadow: 0px 10px 30px black;
+}
+.members {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.member-about {
+  width: 400px;
+  margin: 10px auto;
+  border-radius: 2%;
+  background: #efefef;
+  filter: grayscale(0.8);
+  transition:all 0.2s ease;
+}
+.member-img {
+  width: 90%;
+  margin: 10px auto;
+  position: relative;
+}
+.member-about ul {
+  display: inline-flex;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.member-about ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 40px;
+  width: 40px;
+  margin: 0px 10px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.member-about ul .fa{
+  color: var(--colordust) !important;
+  transition: all 0.2s ease;
+}
+.member-about ul li:hover{
+  font-size: 20px;
+}
+.member-about:hover {
+  box-shadow: 0px 5px 10px black;
+  filter: grayscale(0);
+}
+.member-img img{
+    width: 100%; 
+    height: 500px;   
+    border-radius: 2%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+.member-about h2, h3 {
+  padding-left: 15px;
+  font-weight: lighter !important;
+}
+.member-about p {
+  padding: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media(max-width:480px) {
+  .band-text {
+  width: 85%;
+  padding: 10px;
+}
+.band-text p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+
+}
+.member-about {
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 2%;
+  background: #efefef;
+  filter: grayscale(0.8);
+  transition:all 0.2s ease;
+}
+} 

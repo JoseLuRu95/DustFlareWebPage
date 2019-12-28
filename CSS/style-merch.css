@@ -1,0 +1,107 @@
+.menu-header li a[href="/merch.html"] {
+  color: white;
+  border: 1px solid white;
+}
+.merch {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.merch h1 {
+  font-size: 50px;
+}
+.merch h1::after {
+  content: "";
+  background: var(--colordust);
+  display: block;
+  height: 5px;
+  width: 470px;
+  margin: 5px auto 20px;
+}
+.merch .container {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.container .product {
+  width: 550px;
+  height: 600px;
+  position: relative;
+  margin: 10px auto 10px;
+  background: #efefef;
+  transition: all 0.2s ease;
+}
+
+.product img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.product #img-vinyl {
+  width: 95%;
+  margin: 60px 0 0;
+}
+
+button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  background: var(--colordust);
+  padding: 10px 30px;
+  border-radius: 5%;
+}
+.product-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: all 0.2s ease;
+}
+.product-text p {
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+}
+.container .product:hover {
+  box-shadow: 0px 5px 10px black;
+}
+/* JS Animation */
+.product-text-js {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 480px) {
+  .merch h1 {
+    font-size: 35px;
+  }
+  .container .product {
+    width: 100%;
+    margin: 10px auto 20px;
+  }
+  .product img {
+    width: 100%;
+  }
+  .product #img-vinyl {
+    width: 95%;
+    margin: 150px 0 0;
+  }
+  button {
+    bottom: 5%;
+    left: 50%;
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+  .product-text p {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}

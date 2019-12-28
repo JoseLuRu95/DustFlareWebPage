@@ -1,0 +1,98 @@
+
+.menu-header li a[href="/music.html"] {
+  color: white;
+  border: 1px solid white;
+}
+* {
+  font-weight: lighter;
+}
+.spotify-music,
+.videos-youtube,
+.spotify-album {
+  width: 70%;
+  margin: 10px auto;
+}
+/* Spotify Content */
+.spotify-songs {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.spotify-songs iframe {
+  float: left;
+  margin: 10px 20px 10px 10px;
+}
+.spotify-text {
+  margin: 10px;
+}
+.spotify-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.spotify-text p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+}
+.spotify-text button {
+  width: 150px;
+  height: 40px;
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* Album description */
+.album-description {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.album-description iframe {
+  float: left;
+  margin: 10px 20px 10px 10px
+}
+.album-text {
+  margin: 10px;
+}
+.album-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.album-text p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+}
+.album-text button {
+  width: 150px;
+  height: 40px;
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media(max-width:480px) {
+  .spotify-music,
+.videos-youtube,
+.spotify-album {
+  width: 90%;
+}
+.spotify-songs iframe {
+  float: none;
+  margin-left: 15%;
+}
+.spotify-text h1 {
+  font-size: 1.2rem;
+}
+.spotify-text p {
+  font-size: 1rem;
+}
+.album-description iframe {
+  float: none;
+  margin-left: 5%;
+}
+.album-text h1 {
+  font-size: 1.2rem;
+}
+.album-text p {
+font-size: 1rem;
+}
+}
